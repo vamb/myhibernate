@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pear.zcp.entity">
+	<class name="User" table="USERS">
+		<id name="id" column="ID">
+			<generator class="uuid"/>
+		</id>
+		<property name="name"/>
+		<property name="gender"/>
+		<property name="birthday" type="timestamp"/>
+	</class>
+</hibernate-mapping>
